@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE suppressions PUBLIC
+        "-//Puppy Crawl//DTD Suppressions 1.0//EN"
+        "https://checkstyle.org/dtds/suppressions_1_0.dtd">
+<suppressions>
+    <suppress-xpath checks="HideUtilityClassConstructor" query="//CLASS_DEF[.//ANNOTATION/IDENT[@text='UtilityClass']]"/>
+</suppressions>
+
+
+
+<!--<suppressions>-->
+<!--<suppress-xpath checks="CyclomaticComplexity"-->
+<!--                files="FileOne.java,FileTwo.java"-->
+<!--                query="//METHOD_DEF[./IDENT[@text='sayHelloWorld']]"/>-->
+<!--</suppressions>-->
+
+
+
+<suppress files="SpringCheckStyleApp.java" checks="HideUtilityClassConstructor" />
