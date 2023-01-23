@@ -1,16 +1,17 @@
 package vitali.dao.utils;
 
-import vitali.dao.annotation.MyColumn;
 import java.lang.reflect.Field;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.util.ArrayList;
 import java.util.List;
+import vitali.dao.annotation.MyColumn;
+
 
 /**
  * It is class DaoUtils.
- * @author Administrator
  *
+ * @author Administrator
  */
 public class DaoUtils {
 
@@ -33,7 +34,7 @@ public class DaoUtils {
     /**
      * Close resources.
      *
-     * @param auto
+     * @param auto is very usefully.
      */
     public static void close(final AutoCloseable auto) {
         if (auto != null) {
@@ -47,10 +48,11 @@ public class DaoUtils {
 
     /**
      * Close resources.
-     * @param c
+     *
+     * @param c is needed.
      * @return list
      */
-    public List<String> tableColumns(final Class c) {
+    public static List<String> tableColumns(final Class c) {
         Field[] fields = c.getDeclaredFields();
         List<String> list = new ArrayList<>();
         for (Field f : fields) {

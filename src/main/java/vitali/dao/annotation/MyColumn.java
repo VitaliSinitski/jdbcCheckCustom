@@ -8,8 +8,8 @@ import java.lang.annotation.Target;
 
 /**
  * Column name corresponding to vo class.
- * @author Administrator
  *
+ * @author Administrator
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.TYPE})
@@ -17,6 +17,7 @@ public @interface MyColumn {
 
     /**
      * Some description here.
+     *
      * @return description.
      */
     String name();

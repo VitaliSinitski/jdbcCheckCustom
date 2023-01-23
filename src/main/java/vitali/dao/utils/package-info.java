@@ -2,9 +2,9 @@
  * This module is about impact of the final keyword on performance
  * //TODO don`t forget to add comments.
  * <p>
- * This module explores  if there are any performance benefits from
- * using the final keyword in our code. This module examines the performance
- * implications of using final on a variable, method, and class level.
+ * In this project
+ * we used reflection and Annotation
+ * to customize Dao components.
  * </p>
  *
  * @since 1.0

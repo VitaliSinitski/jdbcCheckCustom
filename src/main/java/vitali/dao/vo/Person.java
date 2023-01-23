@@ -9,6 +9,7 @@ import vitali.dao.annotation.MyTable;
 
 /**
  * It is class Person.
+ *
  * @author Administrator
  *
  */
